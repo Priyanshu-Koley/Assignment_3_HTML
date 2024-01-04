@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="HTML Forms">
+    <meta name="keywords" content="html basics, input tags, label tag">
+    <title>Assignment 3 - HTML Forms</title>
+    <link rel="stylesheet" href="assignment_3_style.css">
+</head>
+<body>
+    <!-- As it is a html assignment so I have used <center> tag to center everything, keeping css uncomplicated -->
+    <center>
+        <form action="" method="">
+            <div class="container">
+                <!-- First name input -->
+                <div class="input-div">
+                    <label for="fName" id="fName-label">First Name:</label>
+                    <input type="text" name="fName" id="fName" required>
+                </div>
+                <!-- Last name input -->
+                <div class="input-div">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName" required>
+                </div>
+                <!-- email input -->
+                <div class="input-div">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <!-- Contact number input -->
+                <div class="input-div">
+                    <label for="phno">Contact Number:</label>
+                    <input type="number" name="phno" id="phno" required>
+                </div>
+                <!-- Username input -->
+                <div class="input-div">
+                    <label for="uName">Username:</label>
+                    <input type="text" name="uName" id="uName" required>
+                </div>
+                <!-- Password input -->
+                <div class="input-div">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="lName" required>
+                </div>
+                <!-- Adress input -->
+                <div class="input-div">
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" cols="19" rows="3" required></textarea>
+                </div>  
+                <!-- Gender radio btn -->
+                <div class="input-div">
+                    <div>
+                        <label for="">Gender:</label>
+                    </div>
+                    <div class="mt-10 gender-opts">
+                        <!-- male radio btn -->
+                        <div>
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <label for="male">Male</label>
+                        </div> 
+                        <!-- female radio btn -->
+                        <div>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Qualification dropdown input -->
+                <div class="input-div">
+                    <label for="qualifications">Qualification:</label>
+                    <select name="qualifications" id="qualifications" class="w-170 mt-10" required>
+                        <option value="" disabled selected>--Select--</option>
+                        <option value="btech" >B.Tech</option>
+                        <option value="mtech" >M.Tech</option>
+                    </select>
+                </div>
+                <!-- Experience dropdown input -->
+                <div class="input-div">
+                    <label for="experience">Experience:</label>
+                    <select name="experience" id="experience" class="w-170 mt-10" required>
+                        <option value="" disabled selected>--Select--</option>
+                        <option value="fresher" >Fresher</option>
+                        <option value="experience" >Experienced</option>
+                    </select>
+                </div>
+                <!-- Coding Language checkbox -->
+                <div class="langs mt-20">
+                    <label for="">Coding Language:</label>
+                        <div>
+                            <input type="checkbox" name="c" id="lang-c" class="ml-20">
+                            <label for="lang-c">C/C++</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="java" id="lang-java" class="ml-20">
+                            <label for="lang-java">Java</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="cs" id="lang-cs" class="ml-20">
+                            <label for="lang-cs">C#</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="php" id="lang-php" class="ml-20">
+                            <label for="lang-php">PHP</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="py" id="lang-py" class="ml-20">
+                            <label for="lang-py">Python</label>
+                        </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="submit-btn-div">
+                    <input type="submit" value="Submit" class="submit-btn">
+                </div>
+            </div>
+        </form>
+    </center>
+    
+</body>
+</html>

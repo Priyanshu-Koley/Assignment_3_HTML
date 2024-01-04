@@ -1,0 +1,66 @@
+/* Form container */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-between;
+}
+/* label and input field container */
+.input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    min-width: 170px;
+}
+/* gender options container */
+.gender-opts{
+    display: flex;
+    align-items: flex-start;
+}
+/* coding languages checkbox container */
+.langs{
+    min-width: 170px;
+    display: flex;
+    align-items: flex-start;
+}
+/* submit btn css */
+.submit-btn{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 40px;
+}
+/* submit btn container css */
+.submit-btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+/* margin-top=20px */
+.mt-20{
+    margin-top: 20px;
+}
+/* margin-top=10px */
+.mt-10{
+    margin-top: 10px;
+}
+/* margin-left=20px */
+.ml-20{
+    margin-left: 20px;
+}
+/* width=170px */
+.w-170{
+    width: 170px;
+}
+/* CSS for mobile responsive */
+@media only screen and (max-width:425px){
+    .container{
+        width: 90%;
+    }
+    .gender-opts{
+        flex-direction: column;
+    }
+    .langs{
+        flex-direction: column;
+    }
+}
